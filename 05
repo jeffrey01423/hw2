@@ -1,0 +1,14 @@
+survey_dict = {}
+market_survey = True
+
+
+while market_survey:
+    name = input("\n請輸入姓名:")
+    travel_location = input("夢幻旅遊景點:")
+    survey_dict[name] = travel_location
+    repeat = input("是否有人要參加市場調查?(y/n)")
+    if repeat != "y":
+        market_survey = False
+print("\n\n以下是市場調查的結果")
+for user , location in survey_dict.items():
+    print(user , "夢幻旅遊景點:", location)
