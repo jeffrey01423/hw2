@@ -1,0 +1,5 @@
+txt=input()
+set1=set(txt.lower())
+set1.remove(" ")
+print(set1)
+print(len(set1)==26)
